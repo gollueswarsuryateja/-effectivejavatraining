@@ -1,12 +1,14 @@
 package account;
-import java.util.Scanner;
+
 
 public class BankAccount{
 	String acc_no,name,password;
 	float balance, interest_rate;
 	Scanner get = new Scanner(System.in);
 	
-		public BankAccount(){}
+		public BankAccount()
+		{
+		}
 		public BankAccount(String accno, String acc_name, String pass, float amount, double rate){
 			acc_no = accno;
 			name = acc_name;
