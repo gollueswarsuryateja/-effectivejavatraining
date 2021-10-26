@@ -1,6 +1,4 @@
 package account;
-
-
 public class BankAccount{
 	String acc_no,name,password;
 	float balance, interest_rate;
