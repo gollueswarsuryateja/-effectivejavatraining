@@ -58,7 +58,8 @@ public class BankAccount{
 		
 		public void options(){
 			System.out.println("1.Account Number\n2. Interest Rate\n3.Account Holder Name\n4. Display Balance\n5.Change Password\n0. exit");
-			switch(get.nextInt()){
+			switch(get.nextInt())
+			{
 				case 1:
 					viewAccNumber();
 					break;
