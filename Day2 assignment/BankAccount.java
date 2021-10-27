@@ -65,7 +65,7 @@ import java.util.Scanner;
 
 		public BankAccount(int accountNumber, String name, String password, double amount,double interestRate) {
 			
-			balance=amount; //this is optional here as there is a single balance in the context	
+			balance=amount; 	
 			this.name=name;
 			setPassword(password);
 			this.interestRate=interestRate;
