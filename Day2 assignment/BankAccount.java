@@ -1,7 +1,8 @@
 package bankstructure;
 import java.util.Scanner;
 
-	public class BankAccount {
+	public class BankAccount 
+	{
 		
 		private int accountNumber;
 		private String name;
@@ -15,44 +16,50 @@ import java.util.Scanner;
 		}
 
 
-		public String getName() {
+		public String getName()
+		{
 			return name;
 		}
 
-		public void setName(String name) {
+		public void setName(String name) 
+		{
 			this.name = name;
 		}
 
 		
-		public double getBalance() {
+		public double getBalance()
+		{
 			System.out.println(balance);
 			return balance;
 		}
 
 		
-		public double getInterestRate() {
+		public double getInterestRate()
+		{
 			return interestRate;
 		}
 
-		public void setInterestRate(double interestRate) {
+		public void setInterestRate(double interestRate)
+		{
 			this.interestRate = interestRate;
 		}
 		
 
-		
-		
-		public String getPassword() {
+		public String getPassword()
+		{
 			return password;
 		}
 
-		public void setPassword(String password) {
+		public void setPassword(String password)
+		{
 			
 			this.password = salt(password);
 		}
 
 		
 
-		private String salt(String password) {
+		private String salt(String password) 
+		{
 			
 			String salted="";
 			
@@ -63,7 +70,8 @@ import java.util.Scanner;
 			return salted;
 		}
 
-		public BankAccount(int accountNumber, String name, String password, double amount,double interestRate) {
+		public BankAccount(int accountNumber, String name, String password, double amount,double interestRate) 
+		{
 			
 			balance=amount; 	
 			this.name=name;
@@ -73,7 +81,8 @@ import java.util.Scanner;
 			
 		}
 		
-		public void show() {
+		public void show()
+		{
 			System.out.println("account number\t"+accountNumber);
 			System.out.println("name         \t"+name);
 			System.out.println("password     \t"+password);
@@ -83,7 +92,8 @@ import java.util.Scanner;
 			
 		}
 
-		public void deposit() {
+		public void deposit() 
+		{
 			
 			System.out.println("Enter the amount to deposit :");
 			long Amount=scan.nextLong();
@@ -93,7 +103,8 @@ import java.util.Scanner;
 			}
 		
 
-		public void withdraw() {
+		public void withdraw()
+		{
 			String psw;
 			
 			System.out.println("Enter the password :");
@@ -125,7 +136,8 @@ import java.util.Scanner;
 			
 		}
 		
-		public void creditInterest() {
+		public void creditInterest() 
+		{
 			balance+=(balance*interestRate/1200);
                         System.out.println("Credited Interest is :"+Balance);
 		}
