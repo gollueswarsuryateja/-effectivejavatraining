@@ -4,11 +4,11 @@ import java.util.Scanner;
 	public class BankAccount 
 	{
 		
-		private int accountNumber;
-		private String name;
-		private String password;
-		private double balance;
-		private double interestRate;
+		 int accountNumber;
+		 String name;
+		 String password;
+		 double balance;
+		 double interestRate;
 		
 		Scanner scan=new Scanner(System.in);
 		public int getAccountNumber() {
